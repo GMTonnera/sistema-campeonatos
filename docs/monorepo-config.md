@@ -340,14 +340,3 @@ O projeto agora possui:
 * Workspaces habilitados
 * Git funcionando adequadamente
 * Ambiente pronto para evolução
-
----
-
-Próximos passos recomendados:
-
-* Configurar `tsconfig` base compartilhado
-* Criar `packages/types`
-* Configurar Docker
-* Integrar NestJS com PostgreSQL
-* Definir modelagem inicial do domínio
-
