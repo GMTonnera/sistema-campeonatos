@@ -1,4 +1,4 @@
-import { Match } from 'src/match/entity/match.entity';
+import { Match } from '../../match/entity/match.entity';
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, OneToMany } from 'typeorm';
 
 @Entity('team')
@@ -11,7 +11,7 @@ export class Team {
     team_name: string;
 
     @Column({ length: 3 })
-    team_acronym: Date;
+    team_acronym: string;
 
     @CreateDateColumn()
     created_at: Date;

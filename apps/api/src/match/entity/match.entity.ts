@@ -1,10 +1,10 @@
-import { Championship } from 'src/championship/entity/championship.entity';
-import { MatchStatus } from 'src/common/enums/match-status.enum';
-import { Team } from 'src/team/entity/team.entity';
+import { Championship } from '../../championship/entity/championship.entity';
+import { MatchStatus } from '../../common/enums/match-status.enum';
+import { Team } from '../../team/entity/team.entity';
 import { Entity, Index, PrimaryGeneratedColumn, ManyToOne, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
 @Entity('match')
-@Index(['championship', 'matchDatetime'])
+@Index(['match_championship', 'match_datetime'])
 export class Match {
     
     @PrimaryGeneratedColumn()
