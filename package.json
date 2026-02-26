@@ -5,7 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "turbo run dev",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "migration:generate": "pnpm --filter api run migration:generate",
+    "migration:run": "pnpm --filter api run migration:run",
+    "migration:revert": "pnpm --filter api run migration:revert"
   },
   "keywords": [],
   "author": "",
