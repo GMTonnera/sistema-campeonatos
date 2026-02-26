@@ -1,4 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import { Match } from 'src/match/entity/match.entity';
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, OneToMany } from 'typeorm';
 
 @Entity('championship')
 export class Championship {
@@ -29,4 +30,7 @@ export class Championship {
 
     @UpdateDateColumn()
     updated_at: Date;
+
+    @OneToMany(() => Match, (match) => match.match_championship)
+    matches: Match[];
 }
